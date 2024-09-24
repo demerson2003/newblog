@@ -121,7 +121,7 @@ button:hover, .button:hover {
     align-items: center; /* Centraliza verticalmente */
     flex-direction: column; /* Organiza as mensagens em coluna */
     position: absolute; /* Para posicionamento absoluto */
-    top: 20px; /* Distância do topo */
+    top: 20.5px; /* Distância do topo */
     width: 100%; /* Ocupa toda a largura da tela */
     z-index: 1000; /* Coloca as mensagens em cima de outros elementos */
 }
