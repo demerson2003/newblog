@@ -1,0 +1,17 @@
+<header>
+    <div class="header-container">
+        <h1>Blog de Exemplo</h1>
+        <div>
+            <a href="/new-post" class="button" onclick="reiniciarLogin()">Nova Postagem</a>
+            <a href="/logout" class="button" style="margin-left: 10px;">Sair</a>
+        </div>
+    </div>
+</header>
+
+<!-- Função para reiniciar o login -->
+<script>
+    function reiniciarLogin() {
+        alert("Você precisa fazer login novamente.");
+        window.location.href = "/login"; // Redireciona para a página de login
+    }
+</script>

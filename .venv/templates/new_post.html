@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Postagem</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><a href="{{ url_for('index') }}" class="logo">Blog Simples</a></h1>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Nova Postagem</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="body">Corpo:</label>
+            <textarea id="body" name="body" rows="10" required></textarea>
+
+            <label for="image">Imagem:</label>
+            <input type="file" id="image" name="image">
+
+            <br><button type="submit">Criar Postagem</button>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meu Blog. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

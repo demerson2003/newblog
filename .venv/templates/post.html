@@ -1,0 +1,23 @@
+<!-- Exemplo de post.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <img src="{{ post.image_url }}" alt="Imagem do Post" style="max-width: 100%; height: auto;">
+    <p>{{ post.body }}</p>
+
+    <div class="button-container">
+        <a href="{{ url_for('index') }}" class="button">Leia Mais</a>
+        <a href="{{ url_for('edit_post', post_id=post_id) }}" class="button">Editar</a>
+        <a href="{{ url_for('delete_post', post_id=post_id) }}" class="button">Excluir</a>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para o body */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://www.postdigital.cc/blog/wp-content/uploads/2022/08/as-5-melhores-plataformas-para-blog.jpg') no-repeat center center fixed, 
+                linear-gradient(to bottom, #f5f5dc, #e0e0e0); /* Gradiente bege para cinza suave */
+    background-size: cover;
+    color: #8c5f3d; /* Texto de cor escura para contraste */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    color: #333;
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-content h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #555;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.header-container .button {
+    background-color: #8c5f3d;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-container .button:hover {
+    background-color: #6d4f28;
+}
+
+/* Rodapé */
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+    z-index: 10;
+}
+
+/* Estilo dos campos de formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-left: 20px; /* Afastando o rótulo da margem esquerda */
+    margin-top: 25px; /* Afastando do topo */
+    margin-bottom: 5px;
+    color: #8c5f3d; /* Cor dos títulos dos inputs */
+}
+
+input, textarea {
+    width: 50%; /* Reduzindo a largura dos inputs */
+    padding: 20px; /* Diminuindo o padding */
+    margin-left: 20px; /* Afastando da margem esquerda */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+input[type="file"] {
+    padding: 5px;
+    background-color: #fff;
+}
+
+/* Botões */
+button, .button {
+    padding: 12px 20px;
+    background-color: #8c5f3d;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 20px; /* Afastando o botão da margem esquerda */
+    padding: 14px 16px; /* Tamanho do botão */
+}
+
+button:hover, .button:hover {
+    background-color: #8c5f3d;
+}
+
+/* Mensagens de Feedback */
+.flash-messages {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza as mensagens em coluna */
+    position: absolute; /* Para posicionamento absoluto */
+    top: 20px; /* Distância do topo */
+    width: 100%; /* Ocupa toda a largura da tela */
+    z-index: 1000; /* Coloca as mensagens em cima de outros elementos */
+}
+
+.flash-message.success {
+    color: green;
+    background-color: #d4edda; /* Fundo verde claro */
+    border: 1px solid #c3e6cb; /* Borda verde */
+}
+
+.flash-message.error {
+    color: red;
+    background-color: #f8d7da; /* Fundo vermelho claro */
+    border: 1px solid #f5c6cb; /* Borda vermelha */
+}
+
+.flash-message.info {
+    color: blue;
+    background-color: #d1ecf1; /* Fundo azul claro */
+    border: 1px solid #bee5eb; /* Borda azul */
+}
+
+.flash-message {
+    margin: 10px 0; /* Espaço entre as mensagens */
+    padding: 15px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 350px; /* Largura fixa para as mensagens */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Cartões de postagens */
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.post-card:hover {
+    transform: scale(1.02);
+}
+
+.post-card img {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post-card h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.post-card p {
+    margin-bottom: 15px;
+}
+
+/* Artigo */
+article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-left: 20px; /* Afastando o botão da margem esquerda */
+    margin-top: 10px;
+}
+
+
+h1{
+    margin-left: 25%;
+    margin-top: 30px;
+    color: #a54e0c;
+}
+
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* ou qualquer cor que preferir */
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em; /* ajuste o tamanho da fonte conforme necessário */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra para destacar o texto */
+}
+
+
